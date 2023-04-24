@@ -26,9 +26,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 School Library <a name="about-project"></a>
+# 📖 Ruby Catalog <a name="about-project"></a>
 
-In this project I created a tool to record what books are in a library and who borrows them.
+This Ruby project implements a UML class diagram by creating separate .rb files for each class, implementing all associations and aggregations, and defining all properties and methods. It includes a user interface and unit tests, and saves data in .json files.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,35 +51,72 @@ In this project I created a tool to record what books are in a library and who b
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [N/A](https://yourdeployedapplicationlink.com)
+- [live demo](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
+To get a local copy of this project and run it in your computer, follow these steps.
 
-Clone project
+### Prerequisites
 
+In order to run this project you need:
+- A working computer.
+- Connection to internet.
+- [Ruby](https://www.ruby-lang.org/en/) installed, if you don't have it, please follow this [simple installation guide](https://www.ruby-lang.org/en/documentation/installation/).
+
+### Setup
+
+To get a local copy up and running follow these simple example steps.
+
+Clone this repository in the desired folder:
 ```bash
-git clone https://github.com/Balikuddembe/school-library-app.git
+git clone https://github.com/jmonto55/Ruby-Catalog.git
 
-cd school-library-app
+cd Ruby-Catalog
 ```
 
-Run the program
+### Install
+
+To install this project:
+```bash
+cd Ruby-Catalog
+bundle install
+gem install rspec
+code .
+```
+
+### Usage
+
+To run the project, execute the following command:
 
 ```bash
 ruby main.rb
+```
+
+### Run Tests
+
+To run the project tests, execute the following command:
+
+```bash
+ruby rspec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Emmanuel Balikuddembe**
+👤 **Ansderly Rameau**
 
-- GitHub: [@Balikuddembe](https://github.com/Balikuddembe)
-- Twitter: [@BalixEmma](https://twitter.com/BalixEmma)
-- LinkedIn: [emmanuelbalikuddembe](https://www.linkedin.com/in/emmanuelbalikuddembe/)
+- GitHub: [@hansderly](https://github.com/hansderly)
+- Twitter: [@_hansderly](https://twitter.com/_hansderly)
+- LinkedIn: [ansderly-rameau](https://www.linkedin.com/in/ansderly-rameau/)
+
+👤 **Uthman Igein Bello-Imoukhuede**
+
+- GitHub: [@Uthmanbello](https://github.com/hansderly)
+- Twitter: [@UthmanDeRoyale](https://twitter.com/UthmanDeRoyale)
+- LinkedIn: [uthmanbelloimoukhuede](https://www.linkedin.com/in/uthmanbelloimoukhuede/)
 
 👤 **Jose Montoya**
 
@@ -90,8 +127,8 @@ ruby main.rb
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Solve edge cases**
-- [ ] **More methods**
+- [ ] **Interactive UI to replace the console UI**
+- [ ] **More awesome methods for your catalog**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
