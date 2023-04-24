@@ -6,7 +6,7 @@ class Item
     @archived = archived
     @publish_date = publish_date
   end
-  
+
   def genre(genre)
     @genre = genre
     genre.items.push(self)
