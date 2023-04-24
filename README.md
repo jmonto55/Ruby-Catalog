@@ -82,7 +82,6 @@ cd Ruby-Catalog
 
 To install this project:
 ```bash
-cd Ruby-Catalog
 bundle install
 gem install rspec
 code .
