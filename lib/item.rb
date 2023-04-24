@@ -7,24 +7,24 @@ class Item
     @publish_date = publish_date
   end
 
-  def genre(genre)
+  def genre=(genre)
     @genre = genre
-    genre.items.push(self)
+    genre.items.push(self) unless genre.items.include?(self)
   end
 
-  def author(author)
+  def author=(author)
     @author = author
-    author.items.push(self)
+    author.items.push(self) unless author.items.include?(self)
   end
 
-  def source(source)
+  def source=(source)
     @source = source
-    source.items.push(self)
+    source.items.push(self) unless source.items.include?(self)
   end
 
-  def label(label)
+  def label=(label)
     @label = label
-    label.items.push(self)
+    label.items.push(self) unless label.items.include?(self)
   end
 
   def can_be_archived?
