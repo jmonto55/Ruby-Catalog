@@ -43,9 +43,11 @@ This Ruby project implements a UML class diagram by creating separate .rb files 
 
 ### Key Features <a name="key-features"></a>
 
-- **Add new students or teachers**
-- **Add new books**
-- **Save records of who borrowed a given book and when**
+- **UML class diagram: The project follows a UML class diagram that specifies the relationships between the classes.**
+- **Custom setter methods: The project uses custom setter methods to set properties for 1-to-many relationships.**
+- **Implementation of methods: The project implements all the methods specified in the UML class diagram, including add_item, can_be_archived and move_to_archive.**
+- **User interface: The project has a user interface that presents a list of options to the user and allows them to perform various actions such as adding or listing items.**
+- **Data preservation: The project saves all data collections in .json files, ensuring that data is preserved between sessions.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
