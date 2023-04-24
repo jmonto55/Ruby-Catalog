@@ -7,5 +7,6 @@ class Genre < Item
     @id = Random.rand(1..100)
     @name = name
     @items = items
+    super()
   end
 end
