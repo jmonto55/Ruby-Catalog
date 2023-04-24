@@ -1,26 +1,36 @@
+require 'date'
+
 class Item
   attr_reader :id, :archived
 
-  def initialize(obj, genre, author, source, label)
+  def initialize(archived, publish_date)
     @id = Random.rand(1..100)
-    @archived = obj.archived
-    @publish_date = obj.publish_date
+    @archived = archived
+    @publish_date = publish_date
+  end
 
+  def genre=(genre)
     @genre = genre
-    genre.items.push(self)
+    genre.items.push(self) unless genre.items.include?(self)
+  end
 
+  def author=(author)
     @author = author
-    author.items.push(self)
+    author.items.push(self) unless author.items.include?(self)
+  end
 
+  def source=(source)
     @source = source
-    source.items.push(self)
+    source.items.push(self) unless source.items.include?(self)
+  end
 
+  def label=(label)
     @label = label
-    label.items.push(self)
+    label.items.push(self) unless label.items.include?(self)
   end
 
   def can_be_archived?
-    @published_date > 10
+    (Date.today - Date.parse(@publish_date)).to_i > 365 * 10
   end
 
   def move_to_archive
