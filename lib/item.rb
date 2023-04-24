@@ -5,16 +5,24 @@ class Item
     @id = Random.rand(1..100)
     @archived = obj.archived
     @publish_date = obj.publish_date
-
+  end
+  
+  def genre(genre)
     @genre = genre
     genre.items.push(self)
+  end
 
+  def author(author)
     @author = author
     author.items.push(self)
+  end
 
+  def source(source)
     @source = source
     source.items.push(self)
+  end
 
+  def label(label)
     @label = label
     label.items.push(self)
   end
