@@ -1,4 +1,4 @@
-require_relative '../lib/item'
+require_relative '../item'
 
 class Genre < Item
   attr_reader :id, :items
@@ -11,7 +11,9 @@ class Genre < Item
   end
 
   def add_item(item)
-    @items << item
-    item.genre = self
+    unless @items.include?(item)
+      @items << item
+      item.genre = self
+    end
   end
 end
