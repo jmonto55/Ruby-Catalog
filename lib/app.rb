@@ -30,9 +30,9 @@ class App
   include Menu
   include ListAllBooks
   include AddBook
-  include AddGame
-  include ListAuthors
-  include ListGames
+  # include AddGame
+  # include ListAuthors
+  # include ListGames
 
   def run
     choice = 0
