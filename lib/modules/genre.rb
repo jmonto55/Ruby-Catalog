@@ -1,13 +1,13 @@
 require_relative '../item'
 
-class Genre < Item
-  attr_reader :id, :items
+class Genre
+  attr_accessor :name, :items
+  attr_reader :id
 
-  def initialize(name, items)
+  def initialize(name)
     @id = Random.rand(1..100)
     @name = name
-    @items = items
-    super(false, Date.today.to_s)
+    @items = []
   end
 
   def add_item(item)
