@@ -1,7 +1,7 @@
 module AddGame
   def create_game
     puts 'Select Game author by number:'
-    @data.authors.each_with_index do |author, index|
+    @data[0].each_with_index do |author, index|
       puts "[#{index}] - Name: #{author.first_name} #{author.last_name}"
     end
     author = gets.chomp.to_i
