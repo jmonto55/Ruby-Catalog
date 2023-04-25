@@ -1,7 +1,9 @@
 module AddBook
   def add_a_book
     puts 'Enter the publish date (yyyy-mm-dd) : '
-    publish_date = Date.parse(gets.chomp)
+    date = gets.chomp
+    # publish_date = Date.parse(date)
+    publish_date = date
 
     puts 'Enter the publisher'
     publisher = gets.chomp
