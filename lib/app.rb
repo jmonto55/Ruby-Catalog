@@ -1,5 +1,10 @@
+# classes
+require_relative './book'
+
+# modules
 require_relative './modules/menu'
 require_relative './modules/list_all_books'
+require_relative './modules/add_book'
 
 ACTIONS = {
   1 => :list_all_books,
@@ -24,6 +29,7 @@ class App
 
   include Menu
   include ListAllBooks
+  include AddBook
   include AddGame
   include ListAuthors
   include ListGames
