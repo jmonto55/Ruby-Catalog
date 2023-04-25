@@ -6,22 +6,10 @@ module AddGame
     end
     author = gets.chomp.to_i
 
-    puts 'Select Game genre by number:'
-    @data.genres.each_with_index do |genre, index|
-      puts "[#{index}] - Genre: #{genre.name}"
-    end
-    genre = gets.chomp.to_i
-
-    puts 'Select Game label by number:'
-    @data.labels.each_with_index do |label, index|
-      puts "[#{index}] - Title: #{label.title} Color: #{label.color}"
-    end
-    label = gets.chomp.to_i
-
-    create_game_props(author, label, genre, @data)
+    create_game_props(author, @data)
   end
 
-  def create_game_props(author, label, genre, data)
+  def create_game_props(author, data)
     print 'Multiplayer available? Y/N :'
     multiplayer = gets.chomp.downcase[0..1] == 'y'
     print 'Last played date dd/mm/yyyy :'
@@ -31,8 +19,6 @@ module AddGame
 
     game = Game.new(multiplayer, last_played, publish_date)
     game.author = data.authors[author]
-    game.label = data.labels[label]
-    game.genre = data.genres[genre]
     @games.push(game)
     puts 'Game created successfully 🕹️'
     show_menu
