@@ -10,6 +10,6 @@ class Game < Item
   end
 
   def can_be_archived?
-    Date.today.year - Date.parse(@publish_date).year > 10 && Date.today.year - Date.parse(@last_played_at).year > 2
+    super && Date.today.year - Date.parse(@last_played_at).year > 2
   end
 end
