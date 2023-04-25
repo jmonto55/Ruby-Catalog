@@ -14,8 +14,19 @@ ACTIONS = {
 }.freeze
 
 class App
+  def initialize
+    @games = []
+    @books = []
+    @music_albums = []
+    @data = []
+    # @data contains genres, labels, and authors
+  end
+
   include Menu
   include ListAllBooks
+  include AddGame
+  include ListAuthors
+  include ListGames
 
   def run
     choice = 0
