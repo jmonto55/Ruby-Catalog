@@ -11,9 +11,9 @@ class Genre < Item
   end
 
   def add_item(item)
-    unless @items.include?(item)
-      @items << item
-      item.genre = self
-    end
+    return if @items.include?(item)
+
+    @items << item
+    item.genre = self
   end
 end
