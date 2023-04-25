@@ -1,5 +1,6 @@
 require_relative './modules/menu'
 require_relative './modules/list_all_books'
+require_relative './modules/add_a_music'
 
 ACTIONS = {
   1 => :list_all_books,
@@ -24,9 +25,10 @@ class App
 
   include Menu
   include ListAllBooks
-  include AddGame
-  include ListAuthors
-  include ListGames
+  include AddMusicAlbum
+  # include AddGame
+  # include ListAuthors
+  # include ListGames
 
   def run
     choice = 0
