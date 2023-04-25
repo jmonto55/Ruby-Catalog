@@ -1,5 +1,5 @@
-require_relative '../../item'
-require_relative '../music_album'
+require_relative '../lib/item'
+require_relative '../lib/music_album'
 
 describe MusicAlbum do
   describe '#can_be_archived?' do
