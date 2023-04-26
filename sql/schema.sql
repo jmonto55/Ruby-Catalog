@@ -29,3 +29,10 @@ CREATE TABLE music_album(
   on_spotify BOOLEAN NOT NULL,  
   publish_date DATE NOT NULL 
 );
+
+-- Book table
+CREATE TABLE book(
+  id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  publisher VARCHAR(255) NOT NULL,
+  cover_state VARCHAR(255) NOT NULL,
+);
