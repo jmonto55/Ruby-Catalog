@@ -6,6 +6,7 @@ require_relative './game'
 # modules
 require_relative './modules/menu'
 require_relative './modules/list_all_books'
+require_relative './modules/list_all_labels'
 require_relative './modules/add_book'
 require_relative './modules/add_game'
 require_relative './modules/list_games'
@@ -34,10 +35,11 @@ class App
 
   include Menu
   include ListAllBooks
+  include ListAllLabels
   include AddBook
-  # include AddGame
-  # include ListAuthors
-  # include ListGames
+  include AddGame
+  include ListAuthors
+  include ListGames
 
   def run
     choice = 0
