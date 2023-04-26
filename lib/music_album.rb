@@ -18,7 +18,7 @@ class MusicAlbum < Item
       aname: @aname,
       on_spotify: @on_spotify,
       publish_date: @publish_date,
-      genre: {name: genre.name}
+      genre: { name: genre.name }
     }
   end
 end

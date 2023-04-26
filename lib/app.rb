@@ -29,9 +29,9 @@ class App
 
   include Menu
   include ListAllBooks
-  # include AddGame
-  # include ListAuthors
-  # include ListGames
+  include AddGame
+  include ListAuthors
+  include ListGames
   include AddMusicAlbum
   include ListAllGenres
   include ListAllMusics
