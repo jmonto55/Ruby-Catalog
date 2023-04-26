@@ -20,6 +20,5 @@ module AddMusicAlbum
     album.genre = genre
     @music_albums.push(album)
     puts 'Music album added successfully'
-    show_menu
   end
 end

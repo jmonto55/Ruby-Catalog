@@ -46,6 +46,7 @@ class App
 
       if choice == 10
         puts " \n Thanks for using catalog\n"
+        save_music_albums_data
         exit
       end
 

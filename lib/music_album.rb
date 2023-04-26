@@ -1,10 +1,10 @@
 require_relative './item'
 
 class MusicAlbum < Item
-  attr_accessor :name, :on_spotify
+  attr_accessor :aname, :on_spotify
 
-  def initialize(name, on_spotify, publish_date)
-    @name = name
+  def initialize(aname, on_spotify, publish_date)
+    @aname = aname
     @on_spotify = on_spotify
     super(publish_date)
   end
@@ -15,7 +15,7 @@ class MusicAlbum < Item
 
   def to_hash
     {
-      name: @name,
+      aname: @aname,
       on_spotify: @on_spotify,
       publish_date: @publish_date,
       genre: {name: genre.name}

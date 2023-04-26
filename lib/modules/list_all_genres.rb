@@ -5,7 +5,7 @@ module ListAllGenres
     puts 'Genres:'
     genres = Set.new
     @music_albums.each do |music|
-      genres << "'#{music.name}'"
+      genres << "#{music.genre.name}"
     end
     genres.each do |genre|
       puts "- #{genre}"
