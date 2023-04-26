@@ -25,7 +25,7 @@ CREATE TABLE genre(
 -- Music Albums Table
 CREATE TABLE music_album(
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  aname VARCHAR(255) NOT NULL,
+  album_name VARCHAR(255) NOT NULL,
   on_spotify BOOLEAN NOT NULL,  
   publish_date DATE NOT NULL 
 );
