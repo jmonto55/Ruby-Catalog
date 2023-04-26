@@ -12,4 +12,3 @@ module ListAuthors
     end
   end
 end
-
