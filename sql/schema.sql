@@ -12,7 +12,6 @@ CREATE TABLE author(
 CREATE TABLE game(
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   publish_date DATE NOT NULL,
-  archived BOOLEAN NOT NULL,
   multiplayer BOOLEAN NOT NULL,  
   last_played_at DATE NOT NULL 
 );
