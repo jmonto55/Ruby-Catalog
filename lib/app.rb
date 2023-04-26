@@ -1,5 +1,7 @@
 # classes
 require_relative './book'
+require_relative './author'
+require_relative './game'
 
 # modules
 require_relative './modules/menu'
@@ -8,8 +10,6 @@ require_relative './modules/add_book'
 require_relative './modules/add_game'
 require_relative './modules/list_games'
 require_relative './modules/list_authors'
-require_relative './author'
-require_relative './game'
 
 ACTIONS = {
   1 => :list_all_books,
