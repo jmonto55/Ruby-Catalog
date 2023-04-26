@@ -1,13 +1,8 @@
-require_relative '../genre'
-require_relative '../music_album'
-
 module ListAllMusics
   def list_all_musics
-    Genre.all.each do |genre|
-      puts "Genre: #{genre.name}"
-      genre.items.each do |item|
-        puts "Album: #{item.name}"
-      end
+    puts 'Music Albums:'
+    @music_albums.each do |music|
+      puts "- Title: #{music.name}, Publish Date: #{music.publish_date}"
     end
   end
 end
