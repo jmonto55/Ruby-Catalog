@@ -2,8 +2,8 @@ require_relative '../lib/item'
 require_relative '../lib/genre'
 
 describe Genre do
-  let(:item1) { Item.new(false, Date.new(2010, 1, 1).to_s) }
-  let(:item2) { Item.new(false, Date.new(2011, 1, 1).to_s) }
+  let(:item1) { Item.new(Date.new(2010, 1, 1).to_s) }
+  let(:item2) { Item.new(Date.new(2011, 1, 1).to_s) }
 
   describe '#add_item' do
     it 'adds the item to the items collection' do

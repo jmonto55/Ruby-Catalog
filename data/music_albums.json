@@ -1,0 +1,26 @@
+[
+  {
+    "aname": "West",
+    "on_spotify": true,
+    "publish_date": "01-02-2003",
+    "genre": {
+      "name": "Rock"
+    }
+  },
+  {
+    "aname": "My life",
+    "on_spotify": true,
+    "publish_date": "01-02-2009",
+    "genre": {
+      "name": "Rock"
+    }
+  },
+  {
+    "aname": "Riderz",
+    "on_spotify": true,
+    "publish_date": "03-01-2008",
+    "genre": {
+      "name": "Hiphop"
+    }
+  }
+]
