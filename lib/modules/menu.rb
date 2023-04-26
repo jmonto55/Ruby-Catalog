@@ -1,6 +1,7 @@
 module Menu
   def show_menu
     puts "
+    Choose a number
     \n 1 - List all books
     \n 2 - List all music albums
     \n 3 - List of games

@@ -1,14 +1,20 @@
+# classes
+require_relative './book'
+require_relative './author'
+require_relative './game'
+
+# modules
 require_relative './modules/menu'
 require_relative './modules/list_all_books'
 require_relative './modules/add_a_music'
 require_relative './modules/list_all_musics'
 require_relative './modules/list_all_genres'
 require_relative './modules/preserve_music_albums_data'
+require_relative './modules/list_all_labels'
+require_relative './modules/add_book'
 require_relative './modules/add_game'
 require_relative './modules/list_games'
 require_relative './modules/list_authors'
-require_relative './author'
-require_relative './game'
 require_relative './modules/preserve_games_data'
 require 'json'
 
@@ -35,6 +41,8 @@ class App
 
   include Menu
   include ListAllBooks
+  include ListAllLabels
+  include AddBook
   include AddGame
   include ListAuthors
   include ListGames
