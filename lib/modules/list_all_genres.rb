@@ -1,9 +1,14 @@
-require_relative '../genre'
+require 'set'
 
 module ListAllGenres
   def list_all_genres
-    Genre.all.each do |genre|
-      print "'#{genre.name}' "
+    puts 'Genres:'
+    genres = Set.new
+    @music_albums.each do |music|
+      genres << "'#{music.name}'"
+    end
+    genres.each do |genre|
+      puts "- #{genre}"
     end
   end
 end
