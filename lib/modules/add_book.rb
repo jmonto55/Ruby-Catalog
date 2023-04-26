@@ -19,8 +19,8 @@ module AddBook
 
     label = Label.new(title, color)
     book = Book.new(publish_date, publisher, cover_state)
-    label.add_item(book)
 
+    book.label = label
     @books << book
   end
 end

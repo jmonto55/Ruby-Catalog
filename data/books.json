@@ -1,0 +1,20 @@
+[
+  {
+    "publisher": "qqq",
+    "publish_date": "qqqq",
+    "cover_state": "qqq",
+    "label": {
+      "title": "qqqq",
+      "color": "qqqq"
+    }
+  },
+  {
+    "publisher": "hans",
+    "publish_date": "2222",
+    "cover_state": "bad",
+    "label": {
+      "title": "lisrrr",
+      "color": "red"
+    }
+  }
+]

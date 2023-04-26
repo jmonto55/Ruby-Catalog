@@ -12,6 +12,7 @@ require_relative './modules/add_game'
 require_relative './modules/list_games'
 require_relative './modules/list_authors'
 require_relative './modules/preserve_games_data'
+require_relative './modules/preserve_book_data'
 require 'json'
 
 ACTIONS = {
@@ -29,7 +30,7 @@ ACTIONS = {
 class App
   def initialize
     @games = load_games_data
-    @books = []
+    @books = load_book_data
     @music_albums = []
     @data = []
     # @data contains genres, labels, and authors
@@ -43,6 +44,7 @@ class App
   include ListAuthors
   include ListGames
   include GameData
+  include BookData
 
   def run
     choice = 0
@@ -54,6 +56,7 @@ class App
       if choice == 10
         puts " \n Thanks for using catalog\n"
         save_games_data
+        save_book_data
         exit
       end
 

@@ -14,4 +14,13 @@ class Book < Item
 
     false
   end
+
+  def to_hash
+    {
+      publisher: @publisher,
+      publish_date: @publish_date,
+      cover_state: @cover_state,
+      label: { title: label.title, color: label.color }
+    }
+  end
 end
