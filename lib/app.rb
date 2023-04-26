@@ -6,6 +6,10 @@ require_relative './game'
 # modules
 require_relative './modules/menu'
 require_relative './modules/list_all_books'
+require_relative './modules/add_a_music'
+require_relative './modules/list_all_musics'
+require_relative './modules/list_all_genres'
+require_relative './modules/preserve_music_albums_data'
 require_relative './modules/list_all_labels'
 require_relative './modules/add_book'
 require_relative './modules/add_game'
@@ -31,7 +35,7 @@ class App
   def initialize
     @games = load_games_data
     @books = load_book_data
-    @music_albums = []
+    @music_albums = load_music_albums_data
     @data = []
     # @data contains genres, labels, and authors
   end
@@ -43,6 +47,10 @@ class App
   include AddGame
   include ListAuthors
   include ListGames
+  include AddMusicAlbum
+  include ListAllGenres
+  include ListAllMusics
+  include MusicAlbumData
   include GameData
   include BookData
 
@@ -55,6 +63,7 @@ class App
 
       if choice == 10
         puts " \n Thanks for using catalog\n"
+        save_music_albums_data
         save_games_data
         save_book_data
         exit
