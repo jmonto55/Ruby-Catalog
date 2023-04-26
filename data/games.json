@@ -4,7 +4,25 @@
     "last_played_at": "01/01/2005",
     "publish_date": "20/02/2010",
     "author": {
-      "first_name": "Zara",
+      "first_name": "Jon",
+      "last_name": "Doe"
+    }
+  },
+  {
+    "multiplayer": false,
+    "last_played_at": "20/02/2010",
+    "publish_date": "01/01/2005",
+    "author": {
+      "first_name": "Jon",
+      "last_name": "Doe"
+    }
+  },
+  {
+    "multiplayer": true,
+    "last_played_at": "01/01/2005",
+    "publish_date": "20/02/2010",
+    "author": {
+      "first_name": "Jon",
       "last_name": "Doe"
     }
   },
