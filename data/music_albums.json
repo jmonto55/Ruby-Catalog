@@ -1,0 +1,10 @@
+[
+  {
+    "aname": "West",
+    "on_spotify": true,
+    "publish_date": "01-02-2003",
+    "genre": {
+      "name": "Rock"
+    }
+  }
+]
