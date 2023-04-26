@@ -3,6 +3,8 @@ require_relative './modules/list_all_books'
 require_relative './modules/add_a_music'
 require_relative './modules/list_all_musics'
 require_relative './modules/list_all_genres'
+require_relative './modules/preserve_music_albums_data'
+require 'json'
 
 ACTIONS = {
   1 => :list_all_books,
@@ -20,7 +22,7 @@ class App
   def initialize
     @games = []
     @books = []
-    @music_albums = []
+    @music_albums = load_music_albums_data
     @data = []
     # @data contains genres, labels, and authors
   end
@@ -33,6 +35,7 @@ class App
   include AddMusicAlbum
   include ListAllGenres
   include ListAllMusics
+  include MusicAlbumData
 
   def run
     choice = 0
