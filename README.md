@@ -95,7 +95,7 @@ code .
 To run the project, execute the following command:
 
 ```bash
-ruby main.rb
+ruby lib/main.rb
 ```
 
 ### Run Tests
