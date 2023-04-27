@@ -8,7 +8,6 @@ module AddGame
 
     print 'Multiplayer available? Y/N :'
     multiplayer = gets.chomp.downcase[0] == 'y'
-    p multiplayer
 
     print 'Last played date dd/mm/yyyy :'
     last_played = gets.chomp
