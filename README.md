@@ -52,7 +52,7 @@ This Ruby project implements a UML class diagram by creating separate .rb files 
 
 ## 🎥 Presentation <a name="live-demo"></a>
 
--   [Presentation]()
+-   [Presentation video](https://drive.google.com/file/d/1hyY1d-h1k6zJU_7vUtEzr3QipXMUGxAE/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
