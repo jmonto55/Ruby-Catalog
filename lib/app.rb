@@ -36,8 +36,6 @@ class App
     @games = load_games_data
     @books = load_book_data
     @music_albums = load_music_albums_data
-    @data = []
-    # @data contains genres, labels, and authors
   end
 
   include Menu
