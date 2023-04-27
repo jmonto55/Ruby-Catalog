@@ -22,5 +22,13 @@
     "genre": {
       "name": "Hiphop"
     }
+  },
+  {
+    "aname": "Lost",
+    "on_spotify": true,
+    "publish_date": "02/01/2222",
+    "genre": {
+      "name": "Rap"
+    }
   }
 ]

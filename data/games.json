@@ -43,5 +43,14 @@
       "first_name": "hans",
       "last_name": "aaa"
     }
+  },
+  {
+    "multiplayer": true,
+    "last_played_at": "02/01/2222",
+    "publish_date": "05/44/3333",
+    "author": {
+      "first_name": "Jose",
+      "last_name": "J"
+    }
   }
 ]

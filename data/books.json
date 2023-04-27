@@ -7,5 +7,14 @@
       "title": "New",
       "color": "Red"
     }
+  },
+  {
+    "publisher": "Hans",
+    "publish_date": "01/02/1111",
+    "cover_state": "bad",
+    "label": {
+      "title": "Gift",
+      "color": "Red"
+    }
   }
 ]
