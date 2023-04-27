@@ -1,20 +1,20 @@
 [
   {
-    "publisher": "qqq",
-    "publish_date": "qqqq",
-    "cover_state": "qqq",
+    "publisher": "Hans",
+    "publish_date": "01/02/2222",
+    "cover_state": "bad",
     "label": {
-      "title": "qqqq",
-      "color": "qqqq"
+      "title": "New",
+      "color": "Red"
     }
   },
   {
-    "publisher": "hans",
-    "publish_date": "2222",
+    "publisher": "Hans",
+    "publish_date": "01/02/1111",
     "cover_state": "bad",
     "label": {
-      "title": "lisrrr",
-      "color": "red"
+      "title": "Gift",
+      "color": "Red"
     }
   }
 ]
