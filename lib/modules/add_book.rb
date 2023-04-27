@@ -1,18 +1,18 @@
 module AddBook
   def add_a_book
-    puts 'Enter the label title'
+    print 'Enter the label title: '
     title = gets.chomp
 
-    puts 'Enter the label color'
+    print 'Enter the label color: '
     color = gets.chomp
 
-    puts 'Enter the publish date (dd/mm/yyyy) : '
+    print 'Enter the publish date (dd/mm/yyyy) : '
     publish_date = gets.chomp
 
-    puts 'Enter the publisher'
+    print 'Enter the publisher: '
     publisher = gets.chomp
 
-    puts 'Enter the cover state'
+    print 'Enter the cover state: '
     cover_state = gets.chomp
 
     label = Label.new(title, color)
